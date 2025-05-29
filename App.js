@@ -15,16 +15,6 @@ export default function App() {
     player.loop = true;
 
     useEffect(() => {
-        console.log('Current time:', playerStatus.currentTime);
-    }, [playerStatus.currentTime]);
-
-    useEffect(() => {
-        console.log('Player paused:', player.paused);
-        console.log("Player current time is: ", playerStatus.currentTime)
-        console.log("Player playback is: ", playerStatus.reasonForWaitingToPlay)
-    }, [player.paused]);
-
-    useEffect(() => {
         console.log("Status", playerStatus);
 
     }, [playerStatus])
