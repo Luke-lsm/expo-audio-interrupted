@@ -24,6 +24,11 @@ export default function App() {
         console.log("Player playback is: ", playerStatus.reasonForWaitingToPlay)
     }, [player.paused]);
 
+    useEffect(() => {
+        console.log("Status", playerStatus);
+
+    }, [playerStatus])
+
     return (
         <View style={styles.container}>
             <TouchableOpacity
@@ -37,8 +42,8 @@ export default function App() {
                 style={{padding: 20, backgroundColor: 'blue', borderRadius: 5}}
             >
                 {player.playing ?
-                    <Text>Pause Audio</Text> :
-                    <Text>Play Audio</Text>}
+                    <Text style={{color: '#fff'}}>Pause Audio</Text> :
+                    <Text style={{color: '#fff'}}>Play Audio</Text>}
             </TouchableOpacity>
             <StatusBar style="auto"/>
         </View>
