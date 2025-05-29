@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-auio-interrupted",
-    "slug": "expo-auio-interrupted",
+    "name": "expo-audio-interrupted",
+    "slug": "expo-audio-interrupted",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-audio"
+    ]
   }
 }
